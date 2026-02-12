@@ -237,3 +237,57 @@ footer p {
     padding: 20px 0;
     font-variant: small-caps;
 }
+#mobilemenu { display: none; }
+
+
+/* MEDIA QUERIES - LOOK GOOD ON IPHONES */
+@media only screen and (max-width: 933px){
+    body {
+        box-shadow: none;
+        font-size: 90%;        
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    #left {
+        order: 2;
+        flex: 0 1 90%;
+        margin: 0 auto;
+
+    }
+    section {
+        flex: 0 1 70%;
+    }
+}
+@media only screen and (max-width: 767px){
+    #mobilemenu { 
+        display: block; 
+    }
+    #nav_menu { 
+        display: none; 
+    }
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+    #mobilemenu a {
+        color: white;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    main {
+        flex-direction: column;
+    }
+    section, aside {
+        max-width: 95%;
+    }
+    #right {
+        order: 3;
+    }
+}
+@media only screen and (max-width: 479px) {
+    header {
+        flex-direction: column;
+        
+    }   
+}
